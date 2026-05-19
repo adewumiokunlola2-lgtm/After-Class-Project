@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <h2>Methods and Loops</h2>
+
+<script>
+
+    var fruits = ["Apple", "Mango", "Grapes",
+
+"Watermelon", "Jack Fruit", "Banana"];
+
+var text = "";
+
+var i;
+
+document.write(str.toUpperCase());
+
+document.write("<br>");
+
+document.write(str.toLowerCase());
+
+document.write("<br>");
+
+document.write(str.startsWith('i'));
+
+document.write("<br>");
+
+var str1 = "I learnt about Methods";
+
+var patt = new RegExp("about");
+
+var res = patt.test(str);
+
+document.write(res);
+
+</script>
+
+<p id="demo"></p>
+
+<script>
+
+for (i = 0; i < fruits.length; i++) {
+
+text += fruits[i] + "<br>";
+
+}
+
+document.getElementById("demo").innerHTML = text;
+
+</script>
+
+</body>
+
+</html>
