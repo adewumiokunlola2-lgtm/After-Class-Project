@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <title>Trigonometric Functions</title>
+</head>
+<body>
+
+    <h1>Sum of Arguments and Trigonometric Values</h1>
+
+    <script>
+        // Function to calculate the sum of arguments
+        function sum(a, b) {
+            return a + b;
+        }
+
+        // Function to print trigonometric values
+        function printTrigValues(angle) {
+            let radians = angle * (Math.PI / 180);
+
+            console.log("Angle: " + angle + "°");
+            console.log("Sin(" + angle + ") = " + Math.sin(radians).toFixed(4));
+            console.log("Cos(" + angle + ") = " + Math.cos(radians).toFixed(4));
+            console.log("Tan(" + angle + ") = " + Math.tan(radians).toFixed(4));
+            console.log("--------------------------");
+        }
+
+        // Using the sum function
+        let result = sum(20, 30);
+        console.log("Sum of arguments: " + result);
+
+        // Printing trigonometric values
+        printTrigValues(0);
+        printTrigValues(30);
+        printTrigValues(45);
+        printTrigValues(60);
+        printTrigValues(90);
+    </script>
+
+</body>
+</html>
