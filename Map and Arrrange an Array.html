@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>Map and Arrange an Array</h2>
+
+    <button onclick="ascending()">Ascending Order</button>
+    <button onclick="descending()">Descending Order</button>
+
+    <p id="result"></p>
+    <p id="product_value"></p>
+
+    <script>
+        var numbers = [25, 100, 1, 81, 4, 10];
+
+                function myFunction(num) {
+            return num * 5;
+        }
+
+        document.getElementById("result").innerHTML = numbers;
+
+        function ascending() {
+            numbers.sort(function(a, b) {
+                return a - b
+            });
+            document.getElementById("result").innerHTML = numbers;
+        }
+
+        function descending() {
+            numbers.sort(function(a, b) {
+                return b - a
+            });
+            document.getElementById("result").innerHTML = numbers;
+        }
+
+                var newarray = numbers.map(myFunction);
+
+        document.getElementById("product_value").innerHTML = newarray;
+    </script>
+
+
+   </body>
+</html>
