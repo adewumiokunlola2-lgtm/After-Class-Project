@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Handle Errors in JavaScript</h2>
+
+<p>This example demonstrates how to handle errors using a <b>try...catch</b> block.</p>
+
+<p id="error_message"></p>
+
+<script>
+try {
+    adddalert("Welcome!");
+}
+catch(err) {
+    document.getElementById("error_message").innerHTML = err.message;
+}
+</script>
+
+</body>
+</html>
